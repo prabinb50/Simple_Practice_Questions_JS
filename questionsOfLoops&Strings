@@ -18,7 +18,7 @@ for (let i = 1; i <= n; i++){
 }
 console.log("sum:", s);
 
-//while loop
+// while loop
 let i = 1;
 while (i <= 7) {
     console.log(i);
@@ -31,3 +31,63 @@ do {
     console.log("i:", p);
     p++;
 } while (p<=4);
+
+
+// for-of loop (mainly used for strings and arrays)
+// calculate size of the string  
+let stringName = "Yangma";
+let size = 0;
+for (let val of stringName) {
+    size++; 
+}
+console.log("size =", size);
+
+// for-in loop (used for objects and also for arrays)
+let students = {
+    name: "Sita",
+    Id: 2211225,
+    CGPA: 3.9,
+    isPassed: true
+};
+for (let key in students) {
+    console.log("key =", key, "value=", students[key]);
+}
+
+// Qs1. Print all even numbers from 0 to 100.
+console.log("Even no.s from 0 to 100 are");
+for (let i = 0; i <= 100; i++) {
+    if (i % 2 === 0) {
+        console.log(i);
+    }
+}
+
+// Qs2. Create a game where you start with any random game number. Ask the user to keep guessing the game number until the user enters correct value.
+// let gameNumber = 11;
+// let randomNumber = prompt("Guess the game number");
+// for (; randomNumber != gameNumber;) { 
+//     randomNumber = prompt("You entered the wrong number, so please guess the game number again");
+// }
+// console.log("Congrats! You entered the correct number, so you win");
+
+
+
+// Strings
+let obj = {
+    item: "pencil",
+    price: 10,
+}
+console.log("The cost of", obj.item, "is", obj.price, "rupees");
+// print by using template string
+finalOutput = `The cost of ${obj.item} is ${obj.price} rupees`;
+console.log(finalOutput);
+
+// Qs1. Prompt the user to enter their full name. Generate a username for them based on the input.
+// Start username with @, followed by their full name and ending with the fullname length.
+// eg: user name =“shradhakhapra”, username should be “@shradhakhapra13”
+let yourName = prompt("Enter your name");
+console.log(`@${yourName}${yourName.length}`);
+
+
+
+
+
