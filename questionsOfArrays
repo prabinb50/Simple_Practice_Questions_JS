@@ -23,9 +23,83 @@ for (let element of names) {
 let marksOfStudents = [85, 97, 44, 37, 76, 60];
 let sum = 0;
 for(i = 0; i < marksOfStudents.length; i++){
-    sum = sum + marksOfStudents[i];
+    sum = sum + marksOfStudents[i]; // calculate the sum of value in array
 }
 console.log("The average marks of the entire class:", sum / marksOfStudents.length);
+
+// Qs. For a given array with prices of 5 items -> [250, 645, 300, 900, 50]
+// All items have an offer of 10% OFF on them. Change the array to store final price after applying offer.
+let priceOfFiveItems = [250, 645, 300, 900, 50];
+for (i = 0; i < priceOfFiveItems.length; i++){
+    offer = priceOfFiveItems[i] / 10;
+    priceOfFiveItems[i] = priceOfFiveItems[i] - offer;  
+}
+console.log(priceOfFiveItems);
+
+
+
+// arrays methods
+// push()
+let fruits = ["mango", "banana", "graphes"];
+fruits.push("apple"); // add at the end of the array
+console.log(fruits);
+// pop
+fruits.pop("apple"); // delete from end 
+console.log(fruits);
+// toString()
+console.log(fruits.toString()); // convert array into string
+// Concat()
+let p = ['a', 'b','c', 'd'];
+let q = ['e', 'f'];
+console.log(p.concat(q));
+
+// unshift() and shift() methods are opposite of push and pop
+
+// slice()
+// returns a piece of array
+let cricketerName = ["Dhoni", "Virat", "Rohit", "Surya", "Sachin", "Ricky"];
+console.log(cricketerName.slice(1,4));
+console.log(cricketerName.slice(1,2));
+
+// splice()
+// change original array (add, remove, replace)
+let singerName = ["Arijit", "Aslim", "Neha", "Shreya", "Darshan", "Atif"];
+singerName.splice(1, 2, "haha");
+console.log(singerName);
+
+
+// Qs. Create an array to store companies -> “Bloomberg”,“Microsoft”,“Uber”,“Google”,“IBM”,“Netflix”
+// a. Remove the first company from the array
+// b. Remove Uber & Add Ola in its place
+// c. Add Amazon at the end
+let companies = ['Bloomberg', 'Microsoft', 'Uber', 'Google', 'IBM', 'Netflix'];
+companies.shift();
+console.log(companies);
+
+companies.splice(1, 1, "Ola");
+console.log(companies);
+
+companies.push("Amazon");
+console.log(companies);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
