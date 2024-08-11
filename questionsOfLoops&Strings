@@ -62,12 +62,12 @@ for (let i = 0; i <= 100; i++) {
 }
 
 // Qs2. Create a game where you start with any random game number. Ask the user to keep guessing the game number until the user enters correct value.
-// let gameNumber = 11;
-// let randomNumber = prompt("Guess the game number");
-// for (; randomNumber != gameNumber;) { 
-//     randomNumber = prompt("You entered the wrong number, so please guess the game number again");
-// }
-// console.log("Congrats! You entered the correct number, so you win");
+let gameNumber = 11;
+let randomNumber = prompt("Guess the game number");
+for (; randomNumber != gameNumber;) { 
+    randomNumber = prompt("You entered the wrong number, so please guess the game number again");
+}
+console.log("Congrats! You entered the correct number, so you win");
 
 
 

@@ -1,0 +1,32 @@
+let marks = [11, 12, 13, 55, 99];
+console.log(marks);
+console.log("the lenghth is:", marks.length); // lenghth of array
+console.log(marks[4]); // position or index of array
+marks[1] = 88; // change the value of index
+console.log(marks);
+
+// looping over an array
+// for loop
+let names = ["parbin", "yangma", "joshi", "lama", "sapna", "kalpana", "sita", "amar", "poonam"];
+for (let i = 0; i<names.length; i++){
+    console.log(names[i]);
+    // console.log(names[i].toUpperCase()); // print using upercase means that in capital letter
+}
+
+// for-of loop
+for (let element of names) {
+    console.log(element.toUpperCase());
+}
+
+// Qs. For a given array with marks of students -> [85, 97, 44, 37, 76, 60]
+// Find the average marks of the entire class.
+let marksOfStudents = [85, 97, 44, 37, 76, 60];
+let sum = 0;
+for(i = 0; i < marksOfStudents.length; i++){
+    sum = sum + marksOfStudents[i];
+}
+console.log("The average marks of the entire class:", sum / marksOfStudents.length);
+
+
+
+
