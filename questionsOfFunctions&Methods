@@ -1,0 +1,56 @@
+function myFunction(){
+    console.log("Hello my name is prabin joshi");
+}
+myFunction(); // call the function
+
+function prabin(joshi){ // parameter means input varibale
+    console.log(joshi);
+}
+prabin("Hi"); // argument
+
+// Question is: make a function to calculate the sum of any two numbers.
+function sumOfTwoNumbers(a, b){
+    console.log(`The sum of two numbers is: ${a + b}`);
+}
+sumOfTwoNumbers(2, 3);
+
+
+// ARROW FUNCTIONS -> short way of writing a function
+const arrowMultiplication = (x, y) => {
+    console.log(x * y);
+}
+arrowMultiplication(3, 5);
+
+// using return
+const arrowSub = (p, j) => {
+    sub = (p - j);
+    return sub;
+}
+console.log(arrowSub(5, 3));
+
+// Qs. Create a function using the “function” keyword that takes a String as an argument & 
+// returns the number of vowels in the string.
+function noOfVowels (stringName){
+    let count = 0;
+    for (let i = 0; i < stringName.length; i++){
+        if(stringName[i] === "a" || stringName[i] === "e" || stringName[i] === "i" || stringName[i] === "o" || stringName[i] === "u"){
+            count++;
+        }
+    }
+    return count;
+}
+console.log(noOfVowels("PrabinJoshi"));
+
+// Qs. Create an arrow function to perform the same task.
+let countOfVowels = (stringName) =>{
+    let count = 0;
+    for (let i = 0; i < stringName.length; i++){
+        if(stringName[i] === "a" || stringName[i] === "e" || stringName[i] === "i" || stringName[i] === "o" || stringName[i] === "u"){
+            count++;
+        }
+    }
+    return count;
+}
+console.log(countOfVowels("PrabinJoshi"));
+
+
