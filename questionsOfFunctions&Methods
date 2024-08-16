@@ -54,3 +54,93 @@ let countOfVowels = (stringName) =>{
 console.log(countOfVowels("PrabinJoshi"));
 
 
+
+// forEach Loop in Arrays
+let cities = ["Kathamdu", "Lalitpur", "BKT", "Dhgn", "Nplgnj"];
+cities.forEach((val)=> { // val means value at each index
+    console.log(val);
+})
+
+let country = ["Nepal", "USA", "Japan", "Korea", "Canada"];
+country.forEach((val, index, arrays)=> { // val means value at each index
+    console.log(val, index, arrays);
+})
+
+// Qs. For a given array of numbers, print the square of each value using the forEach loop.
+// by using for loop
+let givenArray = [1, 2, 3, 4, 5];
+for (let i = 0; i < givenArray.length; i++){
+    square = (givenArray[i]**2);
+    console.log(square);
+}
+
+// by using forEach Loop
+let numbers = [2, 3];
+numbers.forEach((val)=>{
+    console.log(val**2);
+})
+
+
+
+
+// some more array methods
+// 1. map method
+let num = [1, 2, 3, 4];
+let newArr = num.map((val)=>{
+    return val * 2;
+})
+console.log(newArr);
+
+// 2. filter method
+let number = [1, 2, 4, 6, 8, 9, 10];
+let evenNumbers = number.filter((val)=>{
+    return val % 2 === 0;
+})
+console.log(evenNumbers);
+
+// 3. reduce method 
+let arr = [9, 9];
+const sum = arr.reduce((result, currentValue)=>{ // result means previous value or intial vALUE
+    return result+currentValue;
+})
+console.log(sum);
+
+// Qs. We are given array of marks of students. Filter our of the marks of students that scored 90+.
+let marksOfStudents = [20, 30, 55, 85, 90, 92, 98, 95];
+let newStudents = marksOfStudents.filter((val)=>{
+    return val >= 90;
+})
+console.log(newStudents);
+
+// Qs. Take a number n as input from user. Create an array of numbers from 1 to n.
+// Use the reduce method to calculate sum of all numbers in the array.
+// Use the reduce method to calculate product of all numbers in the array.
+let inputNumber = prompt("Enter number"); // take an input from user
+// create an array from 1 to n
+const numberArray = [];
+for (let i = 1; i <= inputNumber; i++){
+    numberArray.push(i);
+}
+console.log(numberArray);
+// reduce method to calcuate sum 
+const s = numberArray.reduce((result, currentValue)=>{
+    return result + currentValue;
+})
+console.log(s);
+// for product
+const product = numberArray.reduce((result, currentValue)=>{
+    return result * currentValue;
+})
+console.log(product);
+
+
+
+
+
+
+
+
+
+
+
+
