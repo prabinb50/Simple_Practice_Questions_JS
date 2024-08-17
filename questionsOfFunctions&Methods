@@ -115,23 +115,90 @@ console.log(newStudents);
 // Qs. Take a number n as input from user. Create an array of numbers from 1 to n.
 // Use the reduce method to calculate sum of all numbers in the array.
 // Use the reduce method to calculate product of all numbers in the array.
-let inputNumber = prompt("Enter number"); // take an input from user
-// create an array from 1 to n
-const numberArray = [];
-for (let i = 1; i <= inputNumber; i++){
-    numberArray.push(i);
+// let inputNumber = prompt("Enter number"); // take an input from user
+// // create an array from 1 to n
+// const numberArray = [];
+// for (let i = 1; i <= inputNumber; i++){
+//     numberArray.push(i);
+// }
+// console.log(numberArray);
+// // reduce method to calcuate sum 
+// const s = numberArray.reduce((result, currentValue)=>{
+//     return result + currentValue;
+// })
+// console.log(s);
+// // for product
+// const product = numberArray.reduce((result, currentValue)=>{
+//     return result * currentValue;
+// })
+// console.log(product);
+
+
+
+
+// OTHERS QUESTIONS
+// 1.a) Create a function that takes an array of numbers and returns a new array containing only 
+// the odd numbers. Use the filter method. 
+// b) Use the map method to square each odd number in the resulting array.
+let randomArr = [9, 10, 11, 12, 13, 14];
+let oddNumbers = randomArr.filter((val) => {
+    return val % 2 !== 0;
+})
+console.log(oddNumbers);
+
+// for 1.b)
+let squareOdd = oddNumbers.map((val)=>{
+    return val * val;
+})
+console.log(squareOdd);
+
+// 2) Write a function that takes an array of numbers and returns the largest number. 
+// Use the reduce method to accomplish this.
+let randomNumber = [2, 3, 4, 5, 6];
+let largestNumber = randomNumber.reduce((result, currentValue)=>{
+    return result > currentValue ? result : currentValue;
+})
+console.log(largestNumber);
+
+// 3) Write a function that takes a string as input and returns the string in reverse order. Use the 
+// split, reverse, and join methods.
+let reserveStrings = (randomStrings) => {
+    return randomStrings.split('').reverse().join('');
 }
-console.log(numberArray);
-// reduce method to calcuate sum 
-const s = numberArray.reduce((result, currentValue)=>{
+console.log(reserveStrings("Prabin"));
+
+// 4) Write a function that takes an array of numbers and returns a new array where each number is multiplied 
+// by its index in the original array. Use the map method.
+let randomNum = [1, 2, 3, 4];
+let newArray = randomNum.map((val, index)=>{
+    return val * index;
+})
+console.log(newArray);
+
+// 5) Write a function that takes an array of numbers and returns the sum of all the odd numbers. Use 
+// the filter and reduce methods.
+let n = [1, 2, 3, 4]
+let s = n.filter((val)=>{
+    return val % 2 !== 0;
+})
+
+let sumofOdd = s.reduce((result, currentValue)=>{
     return result + currentValue;
 })
-console.log(s);
-// for product
-const product = numberArray.reduce((result, currentValue)=>{
-    return result * currentValue;
-})
-console.log(product);
+console.log(sumofOdd);
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
