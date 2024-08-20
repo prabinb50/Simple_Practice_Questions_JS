@@ -213,7 +213,7 @@ let reversedString = (s)=>{
     return s.reverse().join('');
 }
 console.log(reversedString(inputString));
-console.log(inputString);
+
 
 
 
