@@ -4,3 +4,10 @@
     background-color: violet;
     border: 1px solid black;
 }
+
+#div2{
+    height: 100px;
+    width: 100px;
+    background-color: rgb(137, 238, 130);
+    border: 1px solid black;
+}
